@@ -10,6 +10,16 @@ public class RemoveFromList {
             longs.add((long) i);
         }
         System.out.println(longs);
-        longs
+        longs.removeIf(aLong -> aLong % 2 == 0);
+//        Iterator<Long> iterator = longs.iterator();
+       /* while (iterator.hasNext()) {
+            Long current = iterator.next();
+            if (current % 2 == 0) {
+                iterator.remove();
+            }
+        }*/
+
+
+        System.out.println(longs);
     }
 }
